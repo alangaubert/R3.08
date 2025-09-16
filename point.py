@@ -4,20 +4,24 @@ class Point2D:
     """Représente un point dans un plan 2D."""
     
     def __init__(self, x: float = 0.0, y: float = 0.0):
+        # TODO: initialiser x et y
         self.x = x  
         self.y = y  # Initialiser les coordonnées
         pass
 
     def __repr__(self) -> str:
+        # TODO: retourner une représentation textuelle
         return f"Point2D({self.x}, {self.y})" # Retourne une représentation du point
     
 
     def deplacer(self, dx: float, dy: float) -> None:
+        # TODO: modifier les coordonnées x et y
         self.x += dx
         self.y += dy     # Ajout de x et y à dx et dy
         pass
 
     def distance(self, autre_point: "Point2D") -> float:
+        # TODO: calculer et retourner la distance
         return math.sqrt((autre_point.x - self.x) ** 2 + (autre_point.y - self.y) ** 2) # Calculer la distance entre deux points
 
 # --- Tests à valider ---
